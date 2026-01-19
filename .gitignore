@@ -1,0 +1,6 @@
+# files
+files/partition/*
+*.ipynb_checkpoints
+
+# include below even though they are excluded above
+!.gitkeep
