@@ -1,4 +1,6 @@
 # files
+files/dataset/*
+files/models/*
 files/partition/*
 *.ipynb_checkpoints
 

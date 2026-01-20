@@ -14,21 +14,50 @@ Submissions should balance attention to methodological approach and practical in
 - Communicate insights drawn from the dataset, including trends, anomalies, or actionable findings that could inform real-world actuarial decision-making.
 - Present results in a way that is understandable to both technical and non-technical stakeholders.
 
-## 2 Notes
+## 2 Jupyter Lab
 
-### 2.1 Local Install
+### 2.1 Jupyter Lab Usage
+
+The following notebook provides an example workflow for modeling mortality using neural network.
+
+**🔬 Jupyter Notebook:**
+
+- [Neural Network Model](http://githubtocolab.com/jkoestner/soa_ai_challenge_26/blob/main/notebooks/soa_neural.ipynb)
+
+
+### 2.2 Local Install
 To install, download this repository and run the following command in 
 the environment of choice.
 
 ```
 conda create --name soa python=3.12
-pip install .
+pip install -r requirements.txt
 ```
-
-### 2.2 Jupyter Lab Usage
 
 To have conda environments work with Jupyter Notebooks a kernel needs to be 
 defined. This can be done defining a kernel, shown below.
 
 `python -m ipykernel install --user --name=soa`
+
+## 3 AI assisted analysis (CLAUDE)
+
+Claude (an AI assistant) has the ability to use a repository and generate analysis. A "skill" file has been created so that Claude can use the workflow that was run in the `soa_neural.ipynb` notebook. The skill files are located in `.claude\skills\nn-review`.
+
+### 3.1 Claude Usage
+
+Once in the terminal Claude will automatically invoke this skill when you ask things like:
+  - "Review my neural network model using the nn-review skill"
+  - "Analyze the A/E ratios for my mortality model using the nn-review skill"
+  - "Generate SHAP analysis for my predictions using the nn-review skill"
+  - "Check if my model is overfitting using the nn-review skill"
+  
+It's not necessary to add "using the nn-review skill", however it does ensure the model behaves as expected.
+
+The skill includes preferred patterns like using amount_exposed as weights, death_count as secondary axis, and the morai libraries.
+
+### 3.2 Install
+To use claude the CLI terminal should be installed as documented below. This does require an API to use.
+
+https://code.claude.com/docs/en/quickstart
+
 
