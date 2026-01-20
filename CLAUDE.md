@@ -10,11 +10,28 @@ Mortality prediction modeling using neural networks for the SOA (Society of Actu
 files/
 ├── dataset/
 │   └── mortality_grouped.parquet    # Main modeling dataset (~944K rows)
-├── models/                           # Saved models
+├── models/
+│   └── neural.joblib                # Pre-trained neural network model
 ├── partition/                        # Raw partitioned data
 notebooks/
 └── soa_neural.ipynb                  # Main neural network workflow
 ```
+
+## Loading Pre-trained Models
+
+Models are saved in `files/models/` and should be loaded for review (not retrained):
+
+```python
+import joblib
+
+# Load the pre-trained neural network model
+model = joblib.load("files/models/neural.joblib")
+
+# Generate predictions
+predictions = model.predict(X)
+```
+
+**Important:** Do not retrain models unless explicitly requested. Use the saved models for analysis and review.
 
 ## Data Schema
 

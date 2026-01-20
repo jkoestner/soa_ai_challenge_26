@@ -1,4 +1,5 @@
 # files
+.claude/settings.local.json
 files/dataset/*
 files/models/*
 files/partition/*

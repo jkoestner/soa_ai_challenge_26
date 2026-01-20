@@ -8,9 +8,25 @@ allowed-tools: Read, Bash, Write, Edit, Glob, Grep
 
 This skill provides a comprehensive review framework for neural network mortality models, following actuarial best practices.
 
+**Important:** This skill is for reviewing pre-trained models, not training new ones.
+
+## Pre-trained Models
+
+Models are stored in `files/models/` and should be loaded using joblib:
+
+```python
+import joblib
+
+# Load the pre-trained neural network model
+model = joblib.load("files/models/neural.joblib")
+
+# Generate predictions (requires preprocessed X data)
+predictions = model.predict(X)
+```
+
 ## When to Use
 
-- After training a neural network model
+- When reviewing an existing pre-trained model
 - When evaluating model performance
 - When comparing model predictions to actual experience
 - When analyzing feature importance and relationships
