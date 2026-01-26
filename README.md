@@ -46,10 +46,10 @@ Claude (an AI assistant) has the ability to use a repository and generate analys
 ### 3.1 Claude Usage
 
 Once in the terminal Claude will automatically invoke this skill when you ask things like:
-  - "Review my neural network model using the nn-review skill"
-  - "Analyze the A/E ratios for my mortality model using the nn-review skill"
-  - "Generate SHAP analysis for my predictions using the nn-review skill"
-  - "Check if my model is overfitting using the nn-review skill"
+  - "Review my neural network model using the nn-review skill and output results here"
+  - "Analyze the A/E ratios for my mortality model using the nn-review skill and output results here"
+  - "Generate SHAP analysis for my predictions using the nn-review skill and output results here"
+  - "Check if my model is overfitting using the nn-review skill and output results here"
   
 It's not necessary to add "using the nn-review skill", however it does ensure the model behaves as expected.
 

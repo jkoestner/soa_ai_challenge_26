@@ -1,4 +1,4 @@
-morai[neural]==0.3.2
+morai[neural]==0.3.3
 
 # development tools
 black>=25.1.0
