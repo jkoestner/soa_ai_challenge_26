@@ -22,7 +22,9 @@ The following notebook provides an example workflow for modeling mortality using
 
 **🔬 Jupyter Notebook:**
 
-- [Neural Network Model](http://githubtocolab.com/jkoestner/soa_ai_challenge_26/blob/main/notebooks/soa_neural.ipynb)
+- [Neural Network Model with Sampled Data](http://githubtocolab.com/jkoestner/soa_ai_challenge_26/blob/main/notebooks/soa_neural.ipynb)
+
+A full data notebook has been added to this repository to show similar results to the sampled data notebook, however more resources than a standard laptop are needed to analyze. A GPU is recommended.
 
 
 ### 2.2 Local Install
@@ -59,5 +61,17 @@ The skill includes preferred patterns like using amount_exposed as weights, deat
 To use claude the CLI terminal should be installed as documented below. This does require an API to use.
 
 https://code.claude.com/docs/en/quickstart
+
+## 4 Hardware Recommendations
+
+For the sampled data the following specs are recommended
+- CPU is fine - 12 cores
+- RAM: 16GB
+- Storage: 30GB
+
+For the full data the following specs are recommended
+- GPU is recommended - (NVIDIA RTX A4500 or better)
+- VRAM: 20GB
+- Storage: 30GB
 
 
