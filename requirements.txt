@@ -8,3 +8,8 @@ jupyter-resource-usage>=1.1.1
 pytest>=8.3.5
 pytest-cov>=6.0.0
 ruff>=0.11.0
+
+# pinned for reproducibility
+numpy==2.4.6
+polars==1.41.2
+torch==2.9.1
